@@ -2,6 +2,7 @@
 A responsive and modern travel website project built using **HTML**, **CSS**, and **JavaScript**.  
 Includes features like image galleries, booking sections, and smooth navigation.
 
+# DEMO: https://badal1056.github.io/travelwebsite/
 # TECH STACK
   - HTML5
   - CSS3
