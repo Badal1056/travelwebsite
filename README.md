@@ -7,6 +7,7 @@ Includes features like image galleries, booking sections, and smooth navigation.
   - CSS3
   - JavaScript
 
+# MORE DETAILS
 1. Designed and developed a responsive travel booking website offering users a streamlined interface for exploring destinations and booking packages.
 2. Implemented modern front-end practices using HTML5, CSS3, and JavaScript, ensuring a seamless and engaging user experience (UX) across devices.
 3. Integrated interactive components like image sliders, hover effects, and call-to-action sections to enhance user engagement and navigation clarity.
