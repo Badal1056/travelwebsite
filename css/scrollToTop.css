@@ -1,14 +1,54 @@
 /* Preloader */
+/* Preloader container with gradient animation */
 #preloader {
-	background: #400261 url('../img/preloader.gif') no-repeat center center;
-	background-size: 20%;
-	top: 0;
-	height: 100%;
-	width: 100vw;
 	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
 	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  
+	/* Beautiful travel-themed gradient */
+	background: linear-gradient(270deg, #8f3035, #7c1880, #28588b, #602c85, #612c9e);
+	background-size: 1000% 1000%;
+  
+	/* Smooth gradient flow */
+	animation: gradientFlow 3s ease infinite;
 }
+  
+/* Loader image (gif) with smooth scale */
+.loader-img {
+	width: 100px;
+	height: 100px;
+	background-image: url('../img/preloader.gif');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation: scaleUp 2s ease-in-out forwards;
+	opacity: 0;
+  }
 
+@keyframes gradientFlow {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%;
+	background-color: #333333; }
+}
+  
+@keyframes scaleUp {
+	0% {
+	  transform: scale(1);
+	  opacity: 1;
+	}
+	100% {
+	  transform: scale(7);
+	  opacity: 0;
+	}
+}	
+  
 .scroll-up-btn {
 	position: fixed;
 	height: 45px;

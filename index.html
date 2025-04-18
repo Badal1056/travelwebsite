@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -82,7 +80,10 @@
 </head>
 
 <body class="tm-gray-bg">
-	<div id="preloader"></div>
+	<div id="preloader">
+		<div class="loader-img"></div>
+	  </div>
+	  
 	<!-- Scroll to Top Button -->
 	<div class="scroll-up-btn">
 		<i class="fa fa-angle-up"></i>
@@ -120,7 +121,13 @@
 		</div>
 	</div>
 	<!-- landing page -->
-	<section class="landing-page">
+	<div class="video-bg-wrapper">
+		<div class="video-overlay"></div>
+		<video autoplay muted loop playsinline>
+		  <source src="./img/landing page banner.mp4" type="video/mp4" />
+		</video>
+	  </div>
+	  <section class="landing-page section-with-video">
 		<div class="container">
 		  <div class="content">
 			<div class="text-cont">
@@ -140,7 +147,6 @@
 	  </section>
 
 	
-
 	<!-- gray bg -->
 	<section class="container tm-home-section-1" id="more">
 		<div class="row">
@@ -264,30 +270,30 @@
 
 			<div class="col-lg-4 col-md-4 col-sm-6">
 				<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center effect2">
-					<img src="img/index-01.jpg" alt="image" class="arz-img-responsive">
+					<img src="img/Jaipur.jpg" alt="image" class="arz-img-responsive">
 					<div class="arz-overlay">
 						<div class="arz-title">Explore</div>
-						<p class="arz-titleAdd">The beauty of Shimla</p>
+						<p class="arz-titleAdd">JAIPUR - The Pink City of Royals</p>
 					</div>
 					<a href="#">
 						<div class="tm-green-gradient-bg tm-city-price-container">
-							<span>Shimla</span>
-							<span>₹40000</span>
+							<span>Jaipur</span>
+							<span>₹11,999</span>
 						</div>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6">
 				<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right effect2">
-					<img src="img/index-02.jpg" alt="image" class="arz-img-responsive">
+					<img src="img/Kashmir.jpg" alt="image" class="arz-img-responsive">
 					<div class="arz-overlay">
 						<div class="arz-title">Explore</div>
-						<p class="arz-titleAdd">The beauty of Kashmir</p>
+						<p class="arz-titleAdd">KASHMIR - The Heaven on Earth</p>
 					</div>
 					<a href="#">
 						<div class="tm-red-gradient-bg tm-city-price-container">
 							<span>Kashmir</span>
-							<span>₹16000</span>
+							<span>₹18,999</span>
 						</div>
 					</a>
 				</div>
@@ -311,9 +317,9 @@
 			<div class="row reveal">
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
 					<div class="tm-home-box-2">
-						<img src="img/index-03.jpg" alt="image" class="img-responsive">
-						<h3>Goa beach</h3>
-						<p class="tm-date">28 March 2022</p>
+						<img src="img/Ladakh.jpg" alt="image" class="img-responsive" />
+              			<h3>Leh Ladakh, INDIA</h3>
+              			<p class="tm-date">14 June 2022</p>
 						<div class="tm-home-box-2-container">
 							<a href="" class="tm-home-box-2-link"><i
 									class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
@@ -327,8 +333,8 @@
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
 					<div class="tm-home-box-2">
 						<img src="img/index-04.jpg" alt="image" class="img-responsive">
-						<h3>Rajasthan desert</h3>
-						<p class="tm-date">26 March 2022</p>
+						<h3>Thar desert, INDIA</h3>
+						<p class="tm-date">26 March 2023</p>
 						<div class="tm-home-box-2-container">
 							<a href="#" class="tm-home-box-2-link"><i
 									class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
@@ -341,9 +347,9 @@
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
 					<div class="tm-home-box-2">
-						<img src="img/index-05.jpg" alt="image" class="img-responsive">
-						<h3>Konkan railway journey</h3>
-						<p class="tm-date">24 March 2016</p>
+						<img src="img/Kyoto.jpg" alt="image" class="img-responsive">
+						<h3>Kyoto, Japan</h3>
+						<p class="tm-date">08 August 2023</p>
 						<div class="tm-home-box-2-container">
 							<a href="#" class="tm-home-box-2-link"><i
 									class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
@@ -356,8 +362,8 @@
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
 					<div class="tm-home-box-2 tm-home-box-2-right">
-						<img src="img/index-06.jpg" alt="image" class="img-responsive">
-						<h3>Assam jungles</h3>
+						<img src="img/Dubai.jpg" alt="image" class="img-responsive">
+						<h3>Dubai, UAE</h3>
 						<p class="tm-date">22 March 2016</p>
 						<div class="tm-home-box-2-container">
 							<a href="#" class="tm-home-box-2-link"><i
@@ -385,31 +391,31 @@
 			<ul class="slides">
 				<li>
 					<div class="tm-banner-inner">
-						<h1 class="tm-banner-title">Find <span class="tm-yellow-text">The Best</span> Place</h1>
-						<p class="tm-banner-subtitle">For Your Holidays</p>
+						<h1 class="tm-banner-title">Travel <span class="tm-yellow-text">Beyond</span> Limits</h1>
+						<p class="tm-banner-subtitle">Are You Ready?</p>
 						<a href="#visit" class="tm-banner-link">Learn More</a>
 
 					</div>
-					<img src="img/banner-1.jpg" alt="Image" />
+					<img src="img/Home Banner 1.jpg" alt="Image" />
 				</li>
 				<li>
 					<div class="tm-banner-inner">
-						<h1 class="tm-banner-title">Walk Through Your <span class="tm-yellow-text">Dream</span></h1>
-						<p class="tm-banner-subtitle">Wonderful Destinations</p>
+						<h1 class="tm-banner-title">Discover <span class="tm-yellow-text">New </span>Horizon</h1>
+						<p class="tm-banner-subtitle">Dream Destinations</p>
 
 						<a href="#popular" class="tm-banner-link">Learn More</a>
 
 					</div>
-					<img src="img/banner-2.jpg" alt="Image" />
+					<img src="img/Home Banner 2.jpg" alt="Image" />
 				</li>
 				<li>
 					<div class="tm-banner-inner">
-						<h1 class="tm-banner-title">Ride Your <span class="tm-yellow-text">Journey</span></h1>
-						<p class="tm-banner-subtitle"> Enjoy the nature</p>
+						<h1 class="tm-banner-title">Explore <span class="tm-yellow-text">With </span> Us</h1>
+						<p class="tm-banner-subtitle"> Roam the World</p>
 
 						<a href="#visit" class="tm-banner-link">Learn More</a>
 					</div>
-					<img src="img/banner-3.jpg" alt="Image" />
+					<img src="img/Home Banner 3.jpg" alt="Image" />
 				</li>
 			</ul>
 		</div>
@@ -644,6 +650,16 @@
 
 		});
 	</script>
+
+	<script>
+		window.addEventListener('load', () => {
+		const video = document.querySelector('.video-bg-wrapper video');
+		if (video) {
+			video.style.opacity = '1';
+		}
+		});
+	</script>
+
 	<!-- Preloader Script -->
 	<script type="text/javascript">
 		document.addEventListener('load', preLoader())

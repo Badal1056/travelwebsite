@@ -45,7 +45,7 @@ body {
   overflow-x: hidden;
 }
 .tm-header {
-  background: #400361;
+  background: #4e0d71;
   height: 80px;
   width: 100vw;
   position: fixed;
@@ -83,9 +83,11 @@ body {
   /* padding: 45px 34px 15px 34px; */
   text-transform: uppercase;
   transition: all 0.3s ease;
+  text-shadow: 2px 2px 4px rgb(190, 10, 157), -2px -2px 4px rgb(138, 39, 175);
   padding: 10px 20px;
+  font-size: 15px;
   margin: 20px 5px;
-  border-radius: 0px;
+  border-radius: 10px;
 }
 .tm-nav li a.active {
   /* color: #fcdd44; */
@@ -101,9 +103,8 @@ body {
 }
 /* .tm-nav li a:focus, */
 .tm-nav li a:hover::after {
-  /* background: #FCDD44; */
-  /* border-bottom: 5px solid #FCDD44; */
-  /* color: #000; */
+  background: #FCDD44;
+  color: #000;
   width: 100%;
 }
 .tm-banner {
@@ -136,10 +137,12 @@ body {
 .tm-banner-subtitle,
 .tm-banner-link {
   text-transform: uppercase;
+  
 }
 .tm-banner-title,
 .tm-banner-subtitle {
   color: white;
+  text-shadow: 2px 2px 4px rgb(190, 10, 157), -2px -2px 4px rgb(138, 39, 175);
 }
 .tm-banner-title {
   font-size: 74px;
@@ -152,7 +155,7 @@ body {
   color: #fcdd44;
 }
 .tm-banner-link {
-  background: rgba(252, 221, 68, 0.39) none repeat scroll 0% 0%;
+  background: rgba(255, 214, 11, 0.39) none repeat scroll 0% 0%;
   border: 1px solid #d2b731;
   color: #fff;
   font-weight: 600;
@@ -498,10 +501,15 @@ hr {
 /* Tours */
 .tm-tours-box-1 {
   width: 100%;
+  position: relative;
   max-width: 532px;
   margin-bottom: 50px;
-  /* height: 10px;  */
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 .tm-tours-box-1:hover {
   scale: 1.1;
@@ -860,10 +868,15 @@ hr {
   transition: all 0.3s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+
+
+
 .row.reveal .tm-home-box-2:hover,
 .tm-home-box-3:hover,
 .tm-tours-box-2:hover,
 .tm-tours-box-1:hover {
+
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -888,6 +901,11 @@ hr {
   .hotel-search-form .form-group {
     margin-bottom: 18px;
   }
+
+.tm-yellow-gradient-bg{
+  margin-top: -55px;
+}
+
   .tm-home-box-2-description {
     padding: 0.5rem 0.75rem;
   }
@@ -1039,9 +1057,7 @@ hr {
   .tm-banner {
     margin-top: 8%;
   }
-  /* http://www.impressivewebs.com/animate-display-block-none/
-	 * Comment by Jon Christensen
-	 */
+
   .tm-nav.show {
     opacity: 1;
     height: auto;
@@ -1212,48 +1228,53 @@ hr {
   }
 }
 
-@media screen and (max-width: 420px) {
-  .tm-banner {
-    margin-top: 18%;
-  }
-  .tm-banner-title {
-    font-size: 20px;
-  }
-  .tm-banner-subtitle {
-    font-size: 12px;
-  }
-  .tm-banner-link {
-    padding: 5px 10px;
-  }
-  .tm-tours-box-1-info-left,
-  .tm-tours-box-1-info-right {
-    float: none;
-    width: 100%;
-  }
-  .tm-tours-box-1-info-left {
-    border-right: none;
-    border-bottom: 1px solid #b1b1b1;
-    padding-right: 0;
-    padding-bottom: 30px;
-  }
-  .tm-tours-box-1-info-right {
-    padding-left: 0;
-    padding-top: 30px;
-  }
-  .tm-tours-box-1-link-left,
-  .tm-tours-box-1-link-right {
-    float: none;
-    width: 100%;
-    text-align: center;
-  }
-}
 
-@media screen and (max-width: 400px) {
-  .tm-banner {
-    margin-top: 20%;
+
+@media screen and (max-width: 420px) {
+  .arz-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
   }
-  .tm-section-title {
-    font-size: 28px;
+
+  .arz-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .arz-overlay-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* <-- This fixes it */
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: #fff;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .arz-title-card {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff200;
+    text-shadow: 2px 2px #800080;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .arz-titleAdd-card {
+    font-size: 14px;
+    text-align: center;
+    color: #fff200;
+    text-shadow: 2px 2px 4px rgb(190, 10, 157), -2px -2px 4px rgb(138, 39, 175);
   }
 }
 
@@ -1319,7 +1340,7 @@ body {
 .tm-header {
   background: #400361;
   height: 80px;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -1460,6 +1481,7 @@ body {
 .tm-yellow-gradient-bg {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5d11d+0,f3d10e+1,efcf1c+2,fccd0d+4,f7ca0d+5,f9cb1e+6,f7cb10+7,f8cc14+8,f0c40c+54,edc50c+55,e9c108+71,ecc008+78,e6be06+91,e9bd06+93,e8bc06+100 */
   background: #f5d11d; /* Old browsers */ /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+  
   background: linear-gradient(
     to bottom,
     #f5d11d 0%,
@@ -1769,6 +1791,8 @@ hr {
 .tm-tours-box-1 {
   width: 100%;
   max-width: 532px;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 50px;
   transition: all 0.3s ease-in-out;
 }
@@ -2160,16 +2184,18 @@ hr {
   left: 0;
   width: 100%;
   height: 345px;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  text-shadow: 2px 2px 4px rgb(190, 10, 157), -2px -2px 4px rgb(138, 39, 175);
   display: flex;
-  font-family: "Open Sans", sans-serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   opacity: 0;
   transition: opacity 0.3s;
 }
+
 .arz-overlay > * {
   transform: translateY(20px);
   transition: transform 0.3s;
@@ -2192,6 +2218,47 @@ hr {
   height: 344.01px;
   width: 346px;
 }
+
+/* For Title - Cards */
+.arz-overlay-card{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 215px); /* Adjust this height based on your bottom bar */
+  background: rgba(0,0,0,0.4);
+  color: #d9f719;
+  text-shadow: 2px 2px 4px rgb(198, 59, 172), -2px -2px 4px rgb(154, 29, 199);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  
+}
+.arz-overlay-card > * {
+  transform: translateY(20px);
+  transition: transform 0.3s;
+}
+.arz-overlay-card:hover {
+  opacity: 1;
+}
+.arz-overlay-card:hover > * {
+  transform: translateY(0);
+}
+.arz-title-card {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: -1em;
+}
+.arz-titleAdd-card {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+
 @media screen and (max-width: 1199px) {
   .tm-banner {
     margin-top: 7%;

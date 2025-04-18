@@ -105,7 +105,7 @@
 					<p class="tm-banner-subtitle">For Upcoming Holidays</p>
 					<a href="#more" class="tm-banner-link">Contact Us</a>
 				</div>
-				<img src="img/banner-3.jpg" alt="Banner 3" />
+				<video class="background-motion" src="./img/contact thank.mp4" autoplay muted loop playsinline preload="auto" tabindex="-1"></video>
 		    </li>
 		  </ul>
 		</div>
@@ -118,7 +118,7 @@
 			<div class="flexslider effect2 effect2-contact tm-contact-box-1">
 				<ul class="slides">
 					<li>
-						<img class="contact-image-container" src="./img/contact-gif.gif">
+						<img src="img/full-shot-woman-taking-selfie.jpg" />
 						<div class="contact-text">
 							<h2 class="slider-title"> <i class="fa-sharp fa-solid fa-plane-departure"></i> Contact for tours </h2>
 							<h3 class="slider-subtitle"> Paryatna team provides special packages, festival discounts and
@@ -155,6 +155,15 @@
 				method="POST">
 					<div class="col-lg-6 col-md-6">
 						<div id="google-map"></div>
+							<script>
+								const element = document.getElementById("google-map");
+								element.style.backgroundImage = 'url("https://cdn.pixabay.com/photo/2024/05/22/16/51/tour-8781151_1280.jpg")';
+								element.style.backgroundSize = 'cover';
+								element.style.backgroundPosition = 'center';
+								element.style.backgroundRepeat = 'no-repeat';
+								element.style.backgroundColor = 'transparent';
+								console.log("Travel-related background image added to div#google-map");
+							</script>
                     </div>
 
 					<div class="col-lg-6 col-md-6 tm-contact-form-input">

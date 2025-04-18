@@ -21,25 +21,60 @@ body {
   
 }
 #logo{
-  width:200px;
+  width:218px;
 }
+.video-bg-wrapper .video-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* adjust darkness */
+  z-index: 0;
+}
+.section-with-video .content {
+  position: relative;
+  z-index: 1;
+}
+
+.video-bg-wrapper video {
+  position:absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000; /* Choose any fallback color */
+  z-index: -1; /* Makes sure the video stays in the background */
+}
+
+.section-with-video {
+  position: relative;
+  height: 100vh; /* Makes sure the section takes the full height of the viewport */
+  overflow: hidden; /* Prevents any overflow from the video */
+}
+
+
+
 .landing-page {
   padding: 80px 0;
   margin-bottom: 20px;
   user-select: none;
-  font-family: 'Poppins', sans-serif;
-  background: url("https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-size: cover;
 	background-position: center 40%;
 
 }
 .landing-page .container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.landing-page .content .text-cont .header,
+.landing-page .content .text-cont .description {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
 .landing-page .content {
   min-height: 100vh;
   display: flex;
@@ -86,17 +121,33 @@ body {
 }
 .landing-page .content .text-cont .btn-discover:hover {
   border-color: var(--first-clr);
-  background-color: transparent;
+  background-color: white;
   color: var(--first-clr);
 }
 .landing-page .content .text-cont .btn-play {
   color: var(--first-clr);
+  border: 2px solid var(--first-clr);
   border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 10px var(--first-clr);
+  animation: glow 2s infinite ease-in-out;
 }
 .landing-page .content .text-cont .btn-play:hover {
   border-color: var(--first-clr);
   background-color: var(--first-clr);
   color: #FFF;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px var(--first-clr);
+  }
+  50% {
+    box-shadow: 0 0 15px var(--first-clr), 0 0 25px var(--first-clr);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--first-clr);
+  }
 }
 
 .landing-page .content .img-cont {
@@ -136,6 +187,9 @@ body {
 @media screen and (max-width: 650px) {
   .landing-page .content {
     flex-direction: column;
+  }
+  .video-bg-wrapper video {
+    object-position: center;
   }
   .landing-page .content .text-cont,
   .landing-page .content .text-cont .description {
