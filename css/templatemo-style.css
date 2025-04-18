@@ -1228,18 +1228,21 @@ hr {
   }
 }
 
-
+.arz-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Maintains consistent height */
+  overflow: hidden;
+  border-radius: 10px; 
+}
 
 @media screen and (max-width: 420px) {
-  .arz-image-wrapper {
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
+
 
   .arz-image-wrapper img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
   }
 
@@ -1248,7 +1251,7 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* <-- This fixes it */
+    height: 100%;
     background: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
@@ -1262,7 +1265,7 @@ hr {
   }
 
   .arz-title-card {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #fff200;
     text-shadow: 2px 2px #800080;
@@ -1271,7 +1274,7 @@ hr {
   }
 
   .arz-titleAdd-card {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     color: #fff200;
     text-shadow: 2px 2px 4px rgb(190, 10, 157), -2px -2px 4px rgb(138, 39, 175);
@@ -2225,7 +2228,7 @@ hr {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 215px); /* Adjust this height based on your bottom bar */
+  height: 60%; /* Adjust this height based on your bottom bar */
   background: rgba(0,0,0,0.4);
   color: #d9f719;
   text-shadow: 2px 2px 4px rgb(198, 59, 172), -2px -2px 4px rgb(154, 29, 199);
