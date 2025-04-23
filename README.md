@@ -1,8 +1,9 @@
-✈️ Travel Booking Website
+# ✈️ Travel Booking Website
 
 A modern, responsive travel booking platform built with HTML5, CSS3, and JavaScript. This project offers users a seamless experience for exploring travel destinations, browsing curated packages, and booking their trips—all from a clean and intuitive interface.
 
-🌍 Features
+
+# 🌍 Features
 
 Sleek and responsive UI for desktop and mobile devices
 
@@ -12,7 +13,8 @@ Book travel packages with interactive forms and dynamic elements
 
 Designed with best front-end development practices
 
-🔧 Tech Stack
+
+# 🔧 Tech Stack
 
 HTML5
 
@@ -20,7 +22,8 @@ CSS3
 
 JavaScript
 
-🚀 Getting Started
+
+# 🚀 Getting Started
 
 To run locally:
 
