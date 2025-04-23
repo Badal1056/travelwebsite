@@ -1,5 +1,4 @@
-# Demo Link
-https://badal1056.github.io/travelwebsite/
+# Demo Link: https://badal1056.github.io/travelwebsite/
 
 
 # ✈️ Travel Booking Website
