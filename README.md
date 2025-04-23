@@ -25,6 +25,8 @@ CSS3
 
 JavaScript
 
+Bootstrap
+
 
 # 🚀 Getting Started
 
